@@ -46,6 +46,16 @@ function BasicExample() {
                 <Nav.Link>
                   <Link to="/attenlist">Attendance</Link>
                 </Nav.Link>
+                <Nav.Link>
+                  <Link
+                    onClick={() => {
+                      localStorage.removeItem("userData");
+                      window.location.replace("/");
+                    }}
+                  >
+                    Log Out
+                  </Link>
+                </Nav.Link>
                 {/* <Nav.Link href="#link">Link</Nav.Link>
                 <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                   <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>

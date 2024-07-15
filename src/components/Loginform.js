@@ -1184,10 +1184,11 @@ const Loginform = (args) => {
                                   // src={UploadedImage}
                                   src={imageUrl}
                                   style={{ height: "100%", width: "100%" }}
-                                  aspectRatio={1} // Set aspect ratio as needed
+                                  initialAspectRatio={6 / 14}
+                                  // aspectRatio={1} // Set aspect ratio as needed
                                   guides={true}
-                                  cropBoxResizable={true}
                                   dragMode="move"
+                                  cropBoxResizable={true}
                                   viewMode={1} // Set to 1 to restrict the cropping area to within the image dimensions
                                   // ready={() => {
                                   //   // This callback can be used for face detection logic
